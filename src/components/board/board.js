@@ -5,50 +5,10 @@ import Chat from "../chat"
 import Axios from "axios"
 import swal from 'sweetalert'
 import zoom from './zoom.png'
-//import { io } from "socket.io-client"
 
-//const socket = io('http://localhost:3001/')
 
-/*const mockData = {
-    todo: {
-        name: "Todo",
-        items: [{
-            id: 1000,
-            text: "Görev 5656"
-        }, {
-            id: 2000,
-            text: "Görev 5959"
-        }]
-    },
-    inprogress: {
-        name: "Inprogress",
-        items: [{
-            id: 100,
-            text: "Görev 1099"
-        }]
-    },
-    inreview: {
-        name: "InReview",
-        items: [{
-            id: 10000,
-            text: "Görev 2002"
-        }]
-    },
-    intest: {
-        name: "InTest",
-        items: [{
-            id: 100002,
-            text: "Görev 5588"
-        }]
-    },
-    done: {
-        name: "Done",
-        items: [{
-            id: 10000232,
-            text: "Görev 9889"
-        }]
-    }
-}*/
+
+
 function BoardList() {
     const StoredToken = localStorage.getItem('token')
     const room = 'http://localhost:3001/board/' + StoredToken.substring(20, 30)
